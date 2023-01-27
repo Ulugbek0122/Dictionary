@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingHorizontal="15dp"
+        android:id="@+id/bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DCDCDC"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:padding="5dp"
+            android:src="@drawable/ic_previous_back_svgrepo_com"
+            android:background="?selectableItemBackgroundBorderless"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintWidth_percent="0.1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <ImageView
+            android:id="@+id/favourites"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_star_svgrepo_com"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.10" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/reverse"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:padding="8dp"-->
+<!--            android:src="@drawable/ic_reverse_order_svgrepo_com"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintDimensionRatio="1:1"-->
+<!--            app:layout_constraintLeft_toRightOf="@id/favourites"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintWidth_percent="0.12" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="abashed"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/transckip"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bar" />
+
+    <TextView
+        android:id="@+id/transckip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="[askjai]"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@id/english"
+        app:layout_constraintTop_toBottomOf="@id/english" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="adj"
+        android:textColor="#D6A82C"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/countable"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transckip" />
+
+    <TextView
+        android:id="@+id/countable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="[U]"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/type"
+        app:layout_constraintTop_toBottomOf="@id/type" />
+
+    <TextView
+        android:id="@+id/uzbek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="tashlab ketish"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@id/countable"
+        app:layout_constraintTop_toTopOf="@id/countable" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bar"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <ImageView
+        android:id="@+id/sound"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="15dp"
+        android:padding="2dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_volume_medium_svgrepo_com__1_"
+        app:layout_constraintBottom_toBottomOf="@id/star"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintRight_toLeftOf="@id/star"
+        app:layout_constraintTop_toTopOf="@id/star"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        app:layout_constraintHeight_percent="0.0003"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintTop_toBottomOf="@id/uzbek"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

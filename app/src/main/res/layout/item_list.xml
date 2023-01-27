@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_star_svgrepo_com__1_"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/word_tv"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="abate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/sound"
+            android:clickable="true"
+            android:background="@drawable/back_image_btn"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_volume_medium_svgrepo_com__1_"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:background="@drawable/back_item"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"/>
+
+</LinearLayout>
